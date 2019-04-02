@@ -1,0 +1,59 @@
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <!-- <a class="navbar-brand" href="#"></a> -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#QuickSearch" style="margin-left: 50px">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section2" style="margin-left: 50px">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section3" style="margin-left: 50px">Popular Around You</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#section5" style="margin-left: 50px">Contact Us</a>
+        </li>
+      <!-- <li class="nav-item">
+      <a class="nav-link dropdown-toggle" href="#section4" id="navbardrop" data-toggle="dropdown">Locations</a> -->
+      <li class="nav-item">
+          <a class="nav-link dropdown-toggle" href="#section4" style="margin-left: 50px">Locations</a>
+         
+      <div class="dropdown-menu">
+        <!-- <a class="dropdown-item" href="#section41">Link 1</a>
+        <a class="dropdown-item" href="#section42">Link 2</a> -->
+      </div>
+    </li>
+    </ul>
+  </div>
+  
+</nav>
+<div class="jumbotron text-center">
+<ngb-carousel *ngIf="images">
+  <ng-template ngbSlide>
+    <img [src]="images[0]" alt="Random first slide">
+    <div class="carousel-caption">
+      <h3>First slide label</h3>
+      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <img [src]="images[1]" alt="Random second slide">
+    <div class="carousel-caption">
+      <h3>Second slide label</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <img [src]="images[2]" alt="Random third slide">
+    <div class="carousel-caption">
+      <h3>Third slide label</h3>
+      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    </div>
+  </ng-template>
+</ngb-carousel>
+</div>

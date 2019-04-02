@@ -1,0 +1,20 @@
+.ContactForm{
+font-family: Comic Sans MS;
+
+}
+#title{
+    text-align: center;
+    font-size: 36px;
+}
+.ourlocations{
+    font-size: 10px;
+    background-color: salmon;
+    text-align: center;
+}
+#title2{
+    text-align: center;
+}
+#map {
+    height:100%;  
+    width:100%;  
+   }

@@ -9,6 +9,21 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+    <script>
+        
+        function initMap() {
+          
+          var uluru = {lat: -25.344, lng: 131.036};
+          
+          var map = new google.maps.Map(
+              document.getElementById('map'), {zoom: 4, center: uluru});
+              var marker = new google.maps.Marker({position: uluru, map: map});
+        }
+            </script>
+            <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnBoMv7eGXvc3FtqRUK_eJToyCgPZ_m64&callback=initMap">
+            </script>
+
   <app-root></app-root>
 </body>
 </html>
