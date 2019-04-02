@@ -1,41 +1,67 @@
 
-<form>
- <div style="margin-left: 60px">
-    <h1>Contact Us</h1>
-    <hr>
+<form class="ContactForm">
+ <div class="firstdiv" >
+    <h1 id="title">Contact Us</h1>
     <div class="row">
-      <div class="col-md-6">
-       <h5><address>Boston</address></h5> 
-        <p>Phone:- 8572347384 </p><br>
-      </div>
-      <div class="col-md-6">
-          <h5><address>Newyork</address></h5>
-          <p>Phone:- 1234567890 </p><br>
+        <div class="col-md-4 ourlocations" >
+          <br/>
+            <p>Our Locations</p>
+              <p>Boston</p>
+              <p>California</p>
+           </div>
+           <div class="col-md-4 ourlocations">
+              <br/>
+              <p>Our Locations</p>
+                <p>Boston</p>
+                <p>California</p>
+             </div>
+             <div class="col-md-4 ourlocations">
+                <br/>
+                <p>Our Locations</p>
+                  <p>Boston</p>
+                  <p>California</p>
+               </div>
+    </div>
+    <p id="title2">Do you want to ask us any thing ?</p>
+    <form>
+        <div class="row">
+        <div class="col-md-4">
+            <div id="map"></div>
         </div>
-        <div class="col-md-6">
-            <h5><address>Washington</address></h5>
-            <p>Phone:- 9485739405 </p><br>
-          </div>
-          <div class="col-md-6">
-              <h5><address>California</address></h5>
-              <p>Phone:- 4738475069 </p><br>
+        <div class="col-md-4">
+            <div class="form-group">
+            <label for="exampleInputName">First Name: </label>
+            <input type="text" class="form-control" id="exampleInputName" placeholder="Enter your first name" required data-error="Firstname is required.">
             </div>
-     </div>
-  <div class="form-group">
-    <label for="exampleInputName">Message</label>
-    <input type="password" class="form-control" id="exampleInputName" placeholder="Enter your name">
-              </div>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputMsg">Message</label>
-    <input type="password" class="form-control" id="exampleInputMsg" placeholder="Type text here">
-  </div>
-  
-  <button type="submit" class="btn btn-primary">Submit</button>
+        
+            <div class="form-group">
+            <label for="exampleInputName">LastName Name: </label>
+            <input type="text" class="form-control" id="exampleInputName" placeholder="Enter your last name" required data-error="Last name is required.">
+            </div>
+        
+            <div class="form-group">
+            <label for="exampleInputEmail1">Email Id:</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email Id" required data-error="Email Id is required.">
+            <small id="emailHelp" class="form-text text-muted">Your email id is our Treasure, we will keep it safe.</small>
+            </div>
+        
+            <div class="form-group">
+            <label for="exampleInputEmail1">Phone Number:</label>
+            <input type="number" class="form-control"   placeholder="xxx-xxx-xxxx" required data-error="Phone Number is required.">
+            </div>
+                
+            <div class="form-group">
+            <label for="exampleInputMsg">Leave us your message :</label>
+            <textarea class="form-control"  rows="5" id="comment" placeholder="We will get Back to you with 24 hours"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+          
+        </div>
+        </form>
+      </div>
+        <div class="col-md-4">
+            
   </div>
 
 </form>
