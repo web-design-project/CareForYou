@@ -1,0 +1,4 @@
+.navbar-fixed {
+    left: 50px;  /*just an estimate of your sidebar's width */
+    width: calc(92%);
+  }
