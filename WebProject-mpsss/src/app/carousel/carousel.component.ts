@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
-
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-carousel',
@@ -9,12 +9,22 @@ import { FormControl, Validators } from '@angular/forms';
 })
 
 
-export class CarouselComponent  {
+// export class CarouselComponent  {
+//   loginVar: boolean=false;
+//   signupVar: boolean=false;
+//   //images = [1, 2, 3].map(() => `https://picsum.photos/900/500?random&t=${Math.random()}`);
+//   loginFormModalEmail = new FormControl('', Validators.email);
+//   loginFormModalPassword = new FormControl('', Validators.required);
+export class CarouselComponent implements OnInit {
   loginVar: boolean=false;
   signupVar: boolean=false;
-  images = [1, 2, 3].map(() => `https://picsum.photos/900/500?random&t=${Math.random()}`);
-  loginFormModalEmail = new FormControl('', Validators.email);
-  loginFormModalPassword = new FormControl('', Validators.required);
+  constructor(private router: Router) {
+    this.router.routeReuseStrategy.shouldReuseRoute = () =>  {
+      return false;
+    };
+  }
+  ngOnInit() {
+  }
 
 
   onLogin() { 

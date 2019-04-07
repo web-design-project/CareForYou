@@ -1,11 +1,29 @@
-<<<<<<< HEAD
 .navbar-fixed {
     left: 50px;  /*just an estimate of your sidebar's width */
     width: calc(92%);
+    padding-bottom: .30rem;
   }
-=======
+
+  .navbar {
+    margin:0 !important;
+    padding: 10px !important;
+  }
+  /* .jumbotron{
+    
+    width:70%;
+    height:20%;
+    
+    
+    } */
 #carousel-example{
     animation-fill-mode: both;
+    /* top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
+    height: 400px;
+    width: 100%; */
    }
    .overlay {
     position: absolute;
@@ -22,6 +40,12 @@
     -o-transition: opacity 1s;
     transition: opacity 1s;
 }
+
+.img {
+  width: 100%;
+}
+
+
 
 
 
@@ -95,4 +119,3 @@ body {font-family: Arial, Helvetica, sans-serif;}
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
->>>>>>> master
