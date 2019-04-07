@@ -3,12 +3,12 @@ font-family: Comic Sans MS;
 
 }
 #title{
-    text-align: center;
+    text-align: left;
     font-size: 36px;
+    margin-left: 30px;
 }
 .ourlocations{
     font-size: 10px;
-    background-color: salmon;
     text-align: center;
 }
 #title2{

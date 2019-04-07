@@ -1,13 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SecondComponent } from './second/second.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ContactUsFormComponent } from './contact-us-form/contact-us-form.component';
 import { FooterComponent } from './footer/footer.component';
+import { LoginComponent } from './login/login.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { RouterModule } from '@angular/router';
+
 
 
 @NgModule({
@@ -17,12 +19,20 @@ import { FooterComponent } from './footer/footer.component';
     CarouselComponent,
     ContactUsFormComponent,
     FooterComponent,
+    LoginComponent,
+    SignUpComponent,
+ 
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    RouterModule.forRoot([
+      { path: 'login', component: LoginComponent },
+{ path: 'sign-up', component: SignUpComponent },
+{ path: 'home', component: CarouselComponent },
+
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]

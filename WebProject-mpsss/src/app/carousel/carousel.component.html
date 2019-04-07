@@ -1,10 +1,11 @@
-
+<nav class="nav-fixed">
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
   <!-- <a class="navbar-brand" href="#"></a> -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
+   
     <ul class="navbar-nav">
       <li class="nav-item">
         <a class="nav-link" href="#QuickSearch" style="margin-left: 50px">Home</a>
@@ -30,30 +31,159 @@
     </li>
     </ul>
   </div>
-  
+   <button type="button" class="btn btn-outline-danger navbar-btn navbar-right mr-3" routerLink="/login" ><span class="glyphicon glyphicon-log-in"></span> Login</button>
+
+    <button type="button" class="btn btn-outline-danger navbar-btn navbar-right" routerLink="/sign-up" ><span class="glyphicon glyphicon-user"></span>Sign Up</button>
+
 </nav>
-<div class="jumbotron text-center">
-<ngb-carousel *ngIf="images">
+
+</nav>
+   <!-- <div class="jumbotron text-center">
+<div id="carousel-example" class="carousel  fade-carousel slide"> -->
+
+
+
+<!-- <div class="jumbotron text-center"> -->
+    <!-- <div class="carousel-inner" role="listbox" style=" width:100%; height: 500px !important;"> -->
+
+    
+<div id="carousel-example" class="carousel  fade-carousel slide" style=" width:100%; height: 200px !important;">
+
+
+  <!-- <ngb-carousel *ngIf="images">
+  <ngb-carousel #carousel>
   <ng-template ngbSlide>
+<<<<<<< HEAD
     <img src=".\assets\images\babywall.jpg" alt="Random first slide">
+=======
+  
+    <img src="../../assets/images/carousel1.jpg" class="d-block w-100 " alt="Random first slide">
+     <div class="carousel-item active">
+    <div class="overlay"></div> 
+>>>>>>> master
     <div class="carousel-caption">
       <h3>First slide label</h3>
       <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
     </div>
+     </div>
   </ng-template>
   <ng-template ngbSlide>
+<<<<<<< HEAD
     <img src=".\assets\images\animal.jpg" alt="Random second slide">
+=======
+  
+    <img src="../../assets/images/carousel2.jpg" class="d-block w-100 " alt="Random second slide">
+     <div class="carousel-item ">
+    <div class="overlay"></div> 
+   
+>>>>>>> master
     <div class="carousel-caption">
       <h3>Second slide label</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
+     </div> 
   </ng-template>
   <ng-template ngbSlide>
+<<<<<<< HEAD
     <img src=".\assets\images\care.jpg" alt="Random third slide">
+=======
+ 
+    <img src="images[2]" class="d-block w-100 " alt="Random third slide">
+     <div class="carousel-item ">
+        <div class="overlay"></div> 
+>>>>>>> master
     <div class="carousel-caption">
+     
+    
       <h3>Third slide label</h3>
       <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
     </div>
+    </div>
   </ng-template>
-</ngb-carousel>
+</ngb-carousel>   -->
+<!-- <div id="myCarousel"class="carousel slide jumbotron"></div> -->
+<div class="jumbotron" >
+<ngb-carousel #carousel>
+    <ng-template ngbSlide height>
+      <img src="../../assets/images/carousel2.jpg" alt="Random first slide">
+      <div class="carousel-caption">
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <img src="../../assets/images/carousel5.jpg"  alt="Random second slide">
+      <div class="carousel-caption">
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <img src="../../assets/images/carousel14.jpg" alt="Random third slide">
+      <div class="carousel-caption">
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+        <img src="../../assets/images/carousel4.jpg" alt="Random third slide">
+        <div class="carousel-caption">
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+          <img src="../../assets/images/carousel12.jpg" alt="Random third slide">
+          <div class="carousel-caption">
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <img src="../../assets/images/carousel8.jpg" alt="Random third slide">
+            <div class="carousel-caption">
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+              <img src="../../assets/images/carousel10.jpg" alt="Random third slide">
+              <div class="carousel-caption">
+              </div>
+            </ng-template>
+              <ng-template ngbSlide>
+                  <img src="../../assets/images/carousel13.jpg" alt="Random third slide">
+                  <div class="carousel-caption">
+                  </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                    <img src="../../assets/images/carousel6.jpg" alt="Random third slide">
+                    <div class="carousel-caption">
+                    </div>
+                  </ng-template>
+                <ng-template ngbSlide>
+                      <img src="../../assets/images/carousel9.png" alt="Random third slide">
+                      <div class="carousel-caption">
+                      </div>
+                    </ng-template>
+                <ng-template ngbSlide>
+                        <img src="../../assets/images/carousel3.jpg" alt="Random third slide">
+                        <div class="carousel-caption">
+                        </div>
+                      </ng-template>
+                <ng-template ngbSlide>
+                          <img src="../../assets/images/carousel11.jpg" alt="Random third slide">
+                          <div class="carousel-caption">
+                          </div>
+                        </ng-template>
+                <ng-template ngbSlide>
+                        <img src="../../assets/images/carousel7.jpeg" alt="Random third slide">
+                        <div class="carousel-caption">
+                        </div>
+                      </ng-template> 
+  </ngb-carousel>
+
+<!-- </ngb-carousel> -->
 </div>
+
+
+
+
+
+
+  <app-second></app-second>
+
+<div>
+  
+  <app-contact-us-form></app-contact-us-form>
+</div>
+
+<app-footer></app-footer>
